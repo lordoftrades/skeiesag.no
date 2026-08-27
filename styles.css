@@ -852,6 +852,20 @@ iframe:focus-visible {
     padding-bottom: 22px;
 }
 
+.gallery-more {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.gallery-more p {
+    color: var(--text-light);
+    font-size: 1.05rem;
+}
+
+.gallery-more .instagram-link {
+    margin-top: 18px;
+}
+
 
 /* =========================================================
    12. KONTAKT
@@ -1012,6 +1026,18 @@ iframe:focus-visible {
 .instagram-link:hover::before,
 .instagram-link:focus-visible::before {
     opacity: 1;
+}
+
+/* Variant for lys bakgrunn (galleriet) */
+.instagram-link-light {
+    border-color: rgba(32, 61, 49, 0.24);
+    color: var(--green-dark);
+}
+
+.instagram-link-light:hover,
+.instagram-link-light:focus-visible {
+    border-color: transparent;
+    color: var(--white);
 }
 
 
