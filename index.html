@@ -1,175 +1,471 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Skeie Sag | Lokalt sagbruk i Lindesnes</title>
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-body{
-    font-family: Arial, sans-serif;
-    line-height:1.7;
-    background:#f4f4f4;
-    color:#333;
-}
-.hero{
-    background:#2f4f3f;
-    color:white;
-    text-align:center;
-    padding:60px 20px;
-}
-.hero h1{
-    font-size:3rem;
-    margin-bottom:15px;
-}
-.hero p{
-    font-size:1.2rem;
-}
-.hero-image{
-    max-width:1100px;
-    margin:30px auto;
-    padding:0 20px;
-}
-.hero-image img{
-    width:100%;
-    border-radius:10px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.2);
-}
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:30px 20px;
-}
-.card{
-    background:white;
-    margin-bottom:25px;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
-}
-h2{
-    color:#2f4f3f;
-    margin-bottom:20px;
-}
-.services{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-    gap:20px;
-}
-.service-box{
-    background:#f7f7f7;
-    padding:20px;
-    border-radius:8px;
-}
-.gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-.gallery img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:8px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.15);
-}
-.contact{
-    background:#2f4f3f;
-    color:white;
-}
-.contact h2{
-    color:white;
-}
-.footer{
-    text-align:center;
-    padding:30px;
-    color:#777;
-}
-@media(max-width:768px){
-.hero h1{
-    font-size:2rem;
-}
-.hero p{
-    font-size:1rem;
-}
-.gallery img{
-    height:220px;
-}
-}
-</style>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Skeie Sag er et lokalt sagbruk i Lindesnes. Vi tilbyr spesialsaging, oppsaging av kunders egne stokker, lokalt trevirke, eik og spesialmaterialer."
+    >
+
+    <title>Skeie Sag | Lokalt sagbruk i Lindesnes</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<section class="hero">
-    <h1>Skeie Sag</h1>
-    <p>
-        Lokalt sagbruk i Lindesnes
-    </p>
-</section>
-<div class="hero-image">
-    <img src="images/Snekkerboden.jpg" alt="Skeie Sag">
-</div>
-<div class="container">
-    <div class="card">
-        <h2>Om Skeie Sag</h2>
-        <p>
-            Skeie Sag bygger videre på familiebedriften som ble etablert i 1981.
-            Vi tilbyr spesialsaging, lokalt trevirke, eik og oppsaging av kunders egne stokker.
-        </p>
-        <br>
-        <p>
-            Målet er å ta vare på lokale ressurser og gjøre trær med historie om til materialer som kan leve videre i nye prosjekter.
-        </p>
-    </div>
-    <div class="card">
-        <h2>Tjenester</h2>
-        <div class="services">
-            <div class="service-box">
-                <h3>Spesialsaging</h3>
-                <p>Saging av spesialdimensjoner tilpasset kundens behov.</p>
-            </div>
-            <div class="service-box">
-                <h3>Lokalt trevirke</h3>
-                <p>Produksjon av materialer fra lokalt tømmer.</p>
-            </div>
-            <div class="service-box">
-                <h3>Eik og spesialmaterialer</h3>
-                <p>Kvalitetsmaterialer til møbler, interiør og håndverk.</p>
-            </div>
-            <div class="service-box">
-                <h3>Oppsaging av egne stokker</h3>
-                <p>Vi kan sage opp tømmer fra kundens egen eiendom.</p>
-            </div>
+
+    <header class="site-header">
+
+        <div class="header-content">
+
+            #forside
+                <span class="logo-main">Skeie Sag</span>
+                <span class="logo-subtitle">Etablert 1981</span>
+            </a>
+
+            <nav class="main-nav" aria-label="Hovedmeny">
+                #om-ossOm oss</a>
+                #tjenesterTjenester</a>
+                #prosessenFra tre til materiale</a>
+                #galleriGalleri</a>
+                #kontaktKontakt</a>
+            </nav>
+
         </div>
-    </div>
-    <div class="card">
-        <h2>Prosjekter og håndverk</h2>
-        <div class="gallery">
-            <img src="images/Snekkerboden.jpg" alt="Snekkerboden">
-            <img src="images/Troll.jpg" alt="Troll">
-            <img src="images/Dame.jpg" alt="Dame">
-            <img src="images/Fugl.jpg" alt="Fugl">
-            <img src="images/Flaskematerialer.jpg" alt="Flaskematerialer">
+
+    </header>
+
+    <main>
+
+        <section class="hero" id="forside">
+
+            images/Snekkerboden.jpg
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    Lokalt sagbruk i Lindesnes
+                </p>
+
+                <h1>
+                    Lokalt trevirke med historie
+                </h1>
+
+                <p class="hero-introduction">
+                    Spesialsaging, eik, lokalt trevirke og oppsaging
+                    av kunders egne stokker.
+                </p>
+
+                <div class="hero-actions">
+
+                    #kontakt
+                        Ta kontakt
+                    </a>
+
+                    #tjenester
+                        Se våre tjenester
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section" id="om-oss">
+
+            <div class="content-width">
+
+                <div class="split-layout">
+
+                    <div class="split-content">
+
+                        <p class="section-label">
+                            Om Skeie Sag
+                        </p>
+
+                        <h2>
+                            En familiebedrift med røtter tilbake til 1981
+                        </h2>
+
+                        <p class="lead-text">
+                            Skeie Sag bygger videre på familiebedriften som
+                            opprinnelig ble etablert i 1981.
+                        </p>
+
+                        <p>
+                            I dag kombineres lokal håndverkstradisjon med
+                            moderne teknologi. Målet er å ta vare på lokale
+                            ressurser og gjøre trær med historie om til
+                            materialer som kan leve videre i nye prosjekter.
+                        </p>
+
+                        <p>
+                            Vi retter oss mot privatpersoner, hytteeiere,
+                            gårdbrukere og håndverkere som trenger fleksible
+                            løsninger, små serier eller dimensjoner som ikke
+                            finnes som standardvarer.
+                        </p>
+
+                    </div>
+
+                    <div class="split-image">
+
+                        images/Flaskematerialer.jpg
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section section-light" id="tjenester">
+
+            <div class="content-width">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        Våre tjenester
+                    </p>
+
+                    <h2>
+                        Fleksible løsninger for lokale prosjekter
+                    </h2>
+
+                    <p>
+                        Vi hjelper deg med å utnytte lokalt tømmer og få
+                        materialer tilpasset prosjektet ditt.
+                    </p>
+
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+
+                        <span class="service-number">01</span>
+
+                        <h3>Spesialsaging</h3>
+
+                        <p>
+                            Saging av dimensjoner tilpasset kundens behov,
+                            også når standard trelast ikke passer prosjektet.
+                        </p>
+
+                    </article>
+
+                    <article class="service-card">
+
+                        <span class="service-number">02</span>
+
+                        <h3>Oppsaging av egne stokker</h3>
+
+                        <p>
+                            Har du tømmer på egen eiendom, kan stokkene sages
+                            opp til materialer for videre bruk.
+                        </p>
+
+                    </article>
+
+                    <article class="service-card">
+
+                        <span class="service-number">03</span>
+
+                        <h3>Eik og spesialmaterialer</h3>
+
+                        <p>
+                            Materialer med særpreg til møbler, interiør,
+                            restaurering, hytteprosjekter og annet håndverk.
+                        </p>
+
+                    </article>
+
+                    <article class="service-card">
+
+                        <span class="service-number">04</span>
+
+                        <h3>Lokalt trevirke</h3>
+
+                        <p>
+                            Kortreiste råvarer fra regionen, bearbeidet med
+                            fokus på ressursutnyttelse, kvalitet og historie.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section process-section" id="prosessen">
+
+            <div class="content-width">
+
+                <div class="section-heading section-heading-light">
+
+                    <p class="section-label">
+                        Fra tre til ferdig materiale
+                    </p>
+
+                    <h2>
+                        Gi lokale trær et nytt liv
+                    </h2>
+
+                    <p>
+                        Ta kontakt tidlig i prosjektet, så vurderer vi
+                        tømmeret og finner en løsning som passer behovet.
+                    </p>
+
+                </div>
+
+                <div class="process-grid">
+
+                    <article class="process-step">
+
+                        <span class="process-number">1</span>
+
+                        <h3>Ta kontakt</h3>
+
+                        <p>
+                            Fortell hva slags tømmer eller prosjekt du har,
+                            gjerne med mål og bilder.
+                        </p>
+
+                    </article>
+
+                    <article class="process-step">
+
+                        <span class="process-number">2</span>
+
+                        <h3>Planlegging</h3>
+
+                        <p>
+                            Vi avklarer muligheter, ønskede dimensjoner,
+                            mengde og praktisk gjennomføring.
+                        </p>
+
+                    </article>
+
+                    <article class="process-step">
+
+                        <span class="process-number">3</span>
+
+                        <h3>Oppsaging</h3>
+
+                        <p>
+                            Stokkene sages med fokus på god utnyttelse av
+                            råvaren og bruksområdet til materialene.
+                        </p>
+
+                    </article>
+
+                    <article class="process-step">
+
+                        <span class="process-number">4</span>
+
+                        <h3>Nytt prosjekt</h3>
+
+                        <p>
+                            Materialene kan leve videre i møbler,
+                            konstruksjoner, interiør eller annet håndverk.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section" id="galleri">
+
+            <div class="content-width">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        Galleri
+                    </p>
+
+                    <h2>
+                        Prosjekter og håndverk
+                    </h2>
+
+                    <p>
+                        Et lite utvalg fra verkstedet og familiens arbeid
+                        med tre.
+                    </p>
+
+                </div>
+
+                <div class="gallery">
+
+                    <figure class="gallery-item gallery-item-large">
+
+                        images/Snekkerboden.jpg
+
+                        <figcaption>
+                            Verksted og arbeidsmiljø
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="gallery-item">
+
+                        images/Troll.jpg
+
+                        <figcaption>
+                            Håndlaget treskulptur
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="gallery-item">
+
+                        images/Fugl.jpg
+
+                        <figcaption>
+                            Treskulptur
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="gallery-item">
+
+                        images/Dame.jpg
+
+                        <figcaption>
+                            Tradisjonelt trehåndverk
+                        </figcaption>
+
+                    </figure>
+
+                    <figure class="gallery-item gallery-item-wide">
+
+                        images/Flaskematerialer.jpg
+
+                        <figcaption>
+                            Materialer med naturlig særpreg
+                        </figcaption>
+
+                    </figure>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact-section" id="kontakt">
+
+            <div class="content-width">
+
+                <div class="contact-layout">
+
+                    <div class="contact-introduction">
+
+                        <p class="section-label">
+                            Kontakt
+                        </p>
+
+                        <h2>
+                            Har du et tre eller et prosjekt du vil diskutere?
+                        </h2>
+
+                        <p>
+                            Ta kontakt for en uforpliktende prat. Send gjerne
+                            informasjon om treslag, dimensjoner, mengde og
+                            ønsket bruksområde.
+                        </p>
+
+                    </div>
+
+                    <div class="contact-card">
+
+                        <div class="contact-detail">
+
+                            <span class="contact-label">
+                                Telefon
+                            </span>
+
+                            tel:+4740009098
+                                400 09 098
+                            </a>
+
+                        </div>
+
+                        <div class="contact-detail">
+
+                            <span class="contact-label">
+                                E-post
+                            </span>
+
+                            <a href="mailto:post@skeiesag.no">
+                                post@skeiesag.no
+                            </a>
+
+                        </div>
+
+                        <div class="contact-detail">
+
+                            <span class="contact-label">
+                                Område
+                            </span>
+
+                            <span>
+                                Lindesnes og Mandalsregionen
+                            </span>
+
+                        </div>
+
+                        <div class="contact-buttons">
+
+                            tel:+4740009098
+                                Ring oss
+                            </a>
+
+                                                    </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <div class="content-width footer-content">
+
+            <div>
+                <strong>Skeie Sag</strong>
+                <p>Lokalt sagbruk i Lindesnes</p>
+            </div>
+
+            <p>
+                &copy; 2026 Skeie Sag
+            </p>
+
         </div>
-    </div>
-    <div class="card contact">
-        <h2>Kontakt</h2>
-        <p>
-            Telefon: 400 09 098
-        </p>
-        <p>
-            E-post: post@skeiesag.no
-        </p>
-        <p>
-            Lindesnes, Agder
-        </p>
-    </div>
-</div>
-<div class="footer">
-    © Skeie Sag
-</div>
+
+    </footer>
+
 </body>
 </html>
