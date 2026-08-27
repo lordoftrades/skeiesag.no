@@ -714,6 +714,86 @@ iframe:focus-visible {
 }
 
 
+/* --- Instagram-lenke --- */
+
+.instagram-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linejoin: round;
+}
+
+.instagram-icon .instagram-dot {
+    fill: currentColor;
+    stroke: none;
+}
+
+.instagram-link {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    margin-top: 32px;
+    padding: 12px 24px 12px 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    border-radius: 999px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    color: var(--white);
+    font-size: 0.98rem;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+
+    transition:
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+/* Instagram-gradienten tones inn ved hover */
+.instagram-link::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            115deg,
+            #feda75 0%,
+            #fa7e1e 25%,
+            #d62976 55%,
+            #962fbf 78%,
+            #4f5bd5 100%
+        );
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.instagram-link:hover,
+.instagram-link:focus-visible {
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 26px rgba(214, 41, 118, 0.32);
+}
+
+.instagram-link:hover::before,
+.instagram-link:focus-visible::before {
+    opacity: 1;
+}
+
+
 /* =========================================================
    13. KART
    ========================================================= */
@@ -768,6 +848,27 @@ iframe:focus-visible {
     color: var(--white);
     font-family: var(--serif);
     font-size: 1.2rem;
+}
+
+.footer-social {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: rgba(255, 255, 255, 0.72);
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: color 0.25s ease;
+}
+
+.footer-social:hover {
+    color: var(--wood-light);
+}
+
+.footer-social .instagram-icon {
+    width: 19px;
+    height: 19px;
 }
 
 
