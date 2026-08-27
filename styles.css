@@ -499,6 +499,227 @@ iframe:focus-visible {
 }
 
 
+/* --- Priser --- */
+
+.pricing {
+    margin-top: 90px;
+}
+
+.pricing-heading {
+    max-width: 720px;
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.pricing-heading .section-label {
+    display: block;
+    margin-bottom: 14px;
+}
+
+.pricing-heading h3 {
+    color: var(--green-dark);
+    font-family: var(--serif);
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.pricing-heading p:not(.section-label) {
+    margin-top: 18px;
+    color: var(--text-light);
+    font-size: 1.05rem;
+}
+
+.pricing-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+    align-items: stretch;
+    gap: 22px;
+}
+
+.price-label {
+    display: block;
+    margin-bottom: 18px;
+
+    color: var(--wood);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+.price-basis {
+    padding: 38px 34px;
+
+    border: 1px solid var(--border);
+    background: var(--white);
+    box-shadow: var(--shadow-small);
+}
+
+.price-figure {
+    color: var(--green-dark);
+    font-family: var(--serif);
+    font-size: clamp(2.8rem, 5vw, 3.6rem);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.price-unit {
+    display: block;
+    margin-top: 12px;
+
+    color: var(--text-light);
+    font-family: var(--sans);
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.price-note {
+    margin-top: 10px;
+
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.price-facts {
+    margin-top: 28px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+
+    list-style: none;
+}
+
+.price-facts li {
+    position: relative;
+    padding-left: 24px;
+
+    color: var(--text-light);
+    font-size: 0.97rem;
+}
+
+.price-facts li + li {
+    margin-top: 12px;
+}
+
+.price-facts li::before {
+    content: "";
+
+    position: absolute;
+    top: 11px;
+    left: 0;
+
+    width: 12px;
+    height: 2px;
+
+    background: var(--wood-light);
+}
+
+.price-example {
+    padding: 38px 34px;
+
+    background: var(--green-dark);
+    color: var(--white);
+    box-shadow: var(--shadow-medium);
+}
+
+.price-example .price-label {
+    color: var(--wood-light);
+}
+
+.price-example h4 {
+    color: var(--white);
+    font-family: var(--serif);
+    font-size: 1.65rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.example-introduction {
+    margin-top: 14px;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.example-figures {
+    margin-top: 26px;
+}
+
+.example-figures > div {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.example-figures dt {
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.95rem;
+}
+
+.example-figures dd {
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-align: right;
+}
+
+.example-footnote {
+    margin-top: 22px;
+
+    color: var(--wood-light);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.price-factors {
+    margin-top: 22px;
+    padding: 34px;
+
+    border: 1px solid var(--border);
+    background: var(--white);
+}
+
+.price-factors h4 {
+    margin-bottom: 22px;
+
+    color: var(--green-dark);
+    font-size: 1.15rem;
+}
+
+.price-factors ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 40px;
+
+    list-style: none;
+}
+
+.price-factors li {
+    color: var(--text-light);
+    font-size: 0.97rem;
+}
+
+.price-factors strong {
+    color: var(--green);
+}
+
+.price-disclaimer {
+    max-width: 720px;
+    margin: 26px auto 0;
+
+    color: var(--text-light);
+    font-size: 0.9rem;
+    font-style: italic;
+    text-align: center;
+}
+
+
 /* =========================================================
    10. PROSESS
    ========================================================= */
@@ -965,6 +1186,14 @@ iframe:focus-visible {
         grid-auto-rows: 220px;
     }
 
+    .pricing {
+        margin-top: 65px;
+    }
+
+    .pricing-layout {
+        grid-template-columns: 1fr;
+    }
+
     .gallery-item,
     .gallery-item-large,
     .gallery-item-wide {
@@ -1008,6 +1237,20 @@ iframe:focus-visible {
 
     .service-card h3 {
         margin-top: 24px;
+    }
+
+    .price-basis,
+    .price-example,
+    .price-factors {
+        padding: 28px 24px;
+    }
+
+    .price-factors ul {
+        grid-template-columns: 1fr;
+    }
+
+    .example-figures dd {
+        font-size: 1rem;
     }
 
     .hero-actions .button {
