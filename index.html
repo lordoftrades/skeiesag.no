@@ -3,655 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skeie Sag | Leieskjæring og spesialmaterialer i Lindesnes</title>
+    <title>Skeie Sag | Lokalt sagbruk på Skeie i Lindesnes</title>
 
     <meta name="description"
-          content="Skeie Sag sager tømmeret ditt til plank, kledning og spesialdimensjoner. Leieskjæring, eik og lokalt trevirke i Lindesnes og Mandalsregionen.">
+          content="Skeie Sag – lokalt sagbruk på Skeie i Lindesnes. Nettsiden er under arbeid. Ta gjerne kontakt på telefon eller e-post.">
 
-    <link rel="stylesheet" href="styles.css">
+    <!-- Denne siden er frittstående og bruker ikke styles.css.
+         Alt av stil ligger i <style> under. -->
+
+    <style>
+
+        :root {
+            --green-dark: #203d31;
+            --wood-light: #c8a57c;
+            --white: #ffffff;
+
+            --serif: Georgia, "Times New Roman", serif;
+            --sans: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            min-height: 100svh;
+
+            background:
+                linear-gradient(
+                    to bottom,
+                    rgba(20, 38, 30, 0.62),
+                    rgba(20, 38, 30, 0.88)
+                ),
+                url("images/AvstandsbildeSnekkerbod.jpg") center / cover no-repeat;
+            background-color: var(--green-dark);
+
+            color: var(--white);
+            font-family: var(--sans);
+            line-height: 1.7;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 40px 24px;
+            text-align: center;
+        }
+
+        .placeholder {
+            max-width: 560px;
+        }
+
+        .logo-main {
+            display: block;
+
+            font-family: var(--serif);
+            font-size: clamp(2.4rem, 7vw, 3.4rem);
+            font-weight: 700;
+            line-height: 1.1;
+        }
+
+        .logo-subtitle {
+            display: block;
+            margin-top: 12px;
+
+            color: var(--wood-light);
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+        }
+
+        .divider {
+            width: 60px;
+            height: 2px;
+            margin: 34px auto;
+
+            background: var(--wood-light);
+        }
+
+        .message {
+            font-size: 1.15rem;
+        }
+
+        .message strong {
+            display: block;
+            margin-bottom: 10px;
+
+            font-family: var(--serif);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .contact {
+            margin-top: 38px;
+
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px 28px;
+
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+        .contact a {
+            color: var(--white);
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+            padding-bottom: 2px;
+
+            transition: color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .contact a:hover,
+        .contact a:focus-visible {
+            color: var(--wood-light);
+            border-color: var(--wood-light);
+        }
+
+    </style>
 </head>
 
 <body>
 
-<header class="site-header">
+    <div class="placeholder">
 
-    <div class="header-content">
+        <span class="logo-main">Skeie Sag</span>
+        <span class="logo-subtitle">Etablert 1981</span>
 
-        <a href="#forside" class="logo">
-            <span class="logo-main">Skeie Sag</span>
-            <span class="logo-subtitle">Etablert 1981</span>
-        </a>
+        <div class="divider"></div>
 
-        <nav class="main-nav">
-
-            <a href="#forside">Forside</a>
-
-            <a href="#tjenester">Tjenester</a>
-
-            <a href="#prosessen">Slik foregår det</a>
-
-            <a href="#galleri">Galleri</a>
-
-            <a href="#om-oss">Om oss</a>
-
-            <a href="#kontakt">Kontakt</a>
-
-        </nav>
-
-    </div>
-
-</header>
-
-<main>
-
-    <section class="hero" id="forside">
-
-        <div class="hero-content">
-
-            <p class="eyebrow">
-                Leieskjæring i Lindesnes
-            </p>
-
-            <h1>
-                Fra din egen skog til ferdig kledning
-            </h1>
-
-            <p class="hero-introduction">
-                Vi sager tømmeret ditt til plank, kledning og
-                spesialdimensjoner. Lokalt trevirke med historie,
-                i Lindesnes og Mandalsregionen.
-            </p>
-
-            <div class="hero-actions">
-
-                <a href="#tjenester" class="button button-primary">
-                    Se tjenester og priser
-                </a>
-
-                <a href="#kontakt" class="button button-secondary">
-                    Kontakt oss
-                </a>
-
-            </div>
-
-        </div>
-
-        <img
-            class="hero-image"
-            src="images/Flaskematerialer.jpg"
-            alt="Stabel med ferskt saget virke med naturlig kant">
-
-    </section>
-
-    <section class="section section-light" id="tjenester">
-
-        <div class="content-width">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    Våre tjenester
-                </p>
-
-                <h2>
-                    Fleksible løsninger for lokale prosjekter
-                </h2>
-
-            </div>
-
-            <div class="services-grid">
-
-                <article class="service-card">
-
-                    <span class="service-number">01</span>
-
-                    <h3>Leieskjæring av egne stokker</h3>
-
-                    <p>
-                        Vi tar imot og skjærer tømmer fra kundens egen skog.
-                    </p>
-
-                </article>
-
-                <article class="service-card">
-
-                    <span class="service-number">02</span>
-
-                    <h3>Spesialsaging</h3>
-
-                    <p>
-                        Skjæring av spesialdimensjoner tilpasset kundens behov.
-                    </p>
-
-                </article>
-
-                <article class="service-card">
-
-                    <span class="service-number">03</span>
-
-                    <h3>Eik og spesialmaterialer</h3>
-
-                    <p>
-                        Materialer med særpreg til møbler,
-                        interiør og håndverk.
-                    </p>
-
-                </article>
-
-                <article class="service-card">
-
-                    <span class="service-number">04</span>
-
-                    <h3>Lokalt trevirke</h3>
-
-                    <p>
-                        Kortreiste råvarer fra regionen
-                        med fokus på kvalitet.
-                    </p>
-
-                </article>
-
-            </div>
-
-            <div class="pricing">
-
-                <div class="pricing-heading">
-
-                    <p class="section-label">
-                        Priser
-                    </p>
-
-                    <h3>
-                        Hva koster leieskjæring?
-                    </h3>
-
-                    <p>
-                        Vi fakturerer etter medgått tid, fordi ingen stokker er like.
-                        Under ser du timeprisen og en typisk jobb, slik at du vet
-                        omtrent hva du går til før du tar kontakt.
-                    </p>
-
-                </div>
-
-                <div class="pricing-layout">
-
-                    <div class="price-basis">
-
-                        <span class="price-label">Timepris</span>
-
-                        <p class="price-figure">
-                            1 090
-                            <span class="price-unit">kr per time eks. mva.</span>
-                        </p>
-
-                        <p class="price-note">
-                            1 362,50 kr inkl. mva. for privatkunder
-                        </p>
-
-                        <ul class="price-facts">
-
-                            <li>Sag og sagfører inkludert</li>
-
-                            <li>Skjæring på Skeie, du leverer tømmeret</li>
-
-                            <li>Tiden regnes fra første stokk er på saga</li>
-
-                            <!-- Fyll gjerne inn minstepris og km-sats for
-                                 mobil saging her når du har landet på tall. -->
-
-                        </ul>
-
-                    </div>
-
-                    <div class="price-example">
-
-                        <span class="price-label">Eksempeljobb</span>
-
-                        <h4>
-                            Fem granstokker til kledning
-                        </h4>
-
-                        <p class="example-introduction">
-                            Fem rette granstokker på 5 meter, til sammen rundt
-                            3 kubikk, saget til 19 × 125 mm kledningsbord.
-                        </p>
-
-                        <dl class="example-figures">
-
-                            <div>
-                                <dt>Sagtid</dt>
-                                <dd>4–5 timer</dd>
-                            </div>
-
-                            <div>
-                                <dt>Utbytte</dt>
-                                <dd>ca. 500–600 løpemeter</dd>
-                            </div>
-
-                            <div>
-                                <dt>Pris inkl. mva.</dt>
-                                <dd>ca. 5 500–6 800 kr</dd>
-                            </div>
-
-                            <div>
-                                <dt>Per løpemeter</dt>
-                                <dd>ca. 9–14 kr</dd>
-                            </div>
-
-                        </dl>
-
-                        <p class="example-footnote">
-                            Tilsvarende kledning koster typisk 25–50 kr
-                            per meter i byggevarehandelen.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="price-factors">
-
-                    <h4>Dette avgjør hvor lang tid jobben tar</h4>
-
-                    <ul>
-
-                        <li>
-                            <strong>Kvaliteten på stokken.</strong>
-                            Rette stokker uten kvist gir mest bord.
-                            Krok og avsmalning kan redusere utbyttet
-                            med godt over hundre løpemeter.
-                        </li>
-
-                        <li>
-                            <strong>Spiker og metall.</strong>
-                            Hagetrær og gamle tunlinder skjuler ofte spiker
-                            eller piggtråd. Et ødelagt sagblad koster
-                            750 kr og tar litt tid å bytte samt fjerne
-                            elementet fra stokken før man kan gå videre.
-                        </li>
-
-                        <li>
-                            <strong>Dimensjonen du ønsker.</strong>
-                            Tynne bord betyr mange snitt.
-                            Grov konstruksjonslast går vesentlig raskere
-                            per kubikk enn kledning.
-                        </li>
-
-                        <li>
-                            <strong>Kanting og sortering.</strong>
-                            Bord i fast bredde tar lengre tid enn
-                            flaskeskårne materialer med naturlig kant.
-                        </li>
-
-                    </ul>
-
-                </div>
-
-                <p class="price-disclaimer">
-                    Tallene over er veiledende erfaringstall, ikke et bindende tilbud.
-                    Send gjerne bilde av tømmeret, så forsøker vi å gi et konkret prisanslag
-                    før vi setter i gang.
-                </p>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="section process-section" id="prosessen">
-
-        <div class="content-width">
-
-            <div class="section-heading section-heading-light">
-
-                <p class="section-label">
-                    Slik foregår det
-                </p>
-
-                <h2>
-                    Fra stokk til ferdig materiale
-                </h2>
-
-            </div>
-
-            <!-- Juster gjerne teksten under så den stemmer med
-                 hvordan du faktisk vil håndtere levering, henting
-                 og tørking. Dette er de spørsmålene kundene lurer
-                 mest på før de tar kontakt. -->
-
-            <div class="process-grid">
-
-                <article class="process-step">
-                    <span class="process-number">1</span>
-                    <h3>Ta kontakt</h3>
-                    <p>
-                        Ring eller send e-post med bilde av tømmeret.
-                        Fortell hva materialene skal brukes til, så
-                        finner vi ut om det lar seg gjøre og hva det
-                        vil koste.
-                    </p>
-                </article>
-
-                <article class="process-step">
-                    <span class="process-number">2</span>
-                    <h3>Levering til saga</h3>
-                    <p>
-                        Tømmeret leveres til Skeie. Stokkene bør være
-                        kappet i ønsket lengde og børstet fri for jord
-                        og stein, som ellers ødelegger sagbladet.
-                    </p>
-                </article>
-
-                <article class="process-step">
-                    <span class="process-number">3</span>
-                    <h3>Oppsaging</h3>
-                    <p>
-                        Vi sager til avtalt dimensjon og legger
-                        materialene i stabel. Du er velkommen til å
-                        være til stede mens vi jobber.
-                    </p>
-                </article>
-
-                <article class="process-step">
-                    <span class="process-number">4</span>
-                    <h3>Tørking og henting</h3>
-                    <p>
-                        Ferskt virke må tørke før det kan brukes.
-                        Vi forklarer gjerne hvordan du stabler og
-                        lufter materialene riktig hjemme.
-                    </p>
-                </article>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="section" id="galleri">
-
-        <div class="content-width">
-
-            <div class="section-heading">
-
-                <p class="section-label">
-                    Galleri
-                </p>
-
-                <h2>
-                    Prosjekter og håndverk
-                </h2>
-
-            </div>
-
-            <div class="gallery">
-
-                <figure class="gallery-item gallery-item-large">
-
-                    <img src="images/Snekkerboden.jpg"
-                         alt="Snekkerboden – verksted og arbeidsmiljø">
-
-                    <figcaption>
-                        Verksted og arbeidsmiljø
-                    </figcaption>
-
-                </figure>
-
-                <figure class="gallery-item">
-
-                    <img src="images/Flaskematerialer.jpg"
-                         alt="Stabel med flaskeskårne materialer">
-
-                    <figcaption>
-                        Materialer med naturlig særpreg
-                    </figcaption>
-
-                </figure>
-
-                <figure class="gallery-item">
-
-                    <img src="images/Troll.jpg"
-                         alt="Håndlaget treskulptur av et troll">
-
-                    <figcaption>
-                        Håndlaget treskulptur
-                    </figcaption>
-
-                </figure>
-
-                <figure class="gallery-item">
-
-                    <img src="images/Dame.jpg"
-                         alt="Treskulptur av en kvinnefigur">
-
-                    <figcaption>
-                        Tradisjonelt trehåndverk
-                    </figcaption>
-
-                </figure>
-
-                <figure class="gallery-item gallery-item-wide">
-
-                    <img src="images/Fugl.jpg"
-                         alt="Treskulptur av en fugl">
-
-                    <figcaption>
-                        Treskulptur
-                    </figcaption>
-
-                </figure>
-
-            </div>
-
-            <div class="gallery-more">
-
-                <p>
-                    Vi legger ut bilder og videoer fra saga
-                    og verkstedet jevnlig.
-                </p>
-
-                <a class="instagram-link instagram-link-light"
-                   href="https://www.instagram.com/skeie_sag/"
-                   target="_blank"
-                   rel="noopener">
-
-                    <svg class="instagram-icon"
-                         viewBox="0 0 24 24"
-                         aria-hidden="true"
-                         focusable="false">
-                        <rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.4"/>
-                        <circle cx="12" cy="12" r="4.4"/>
-                        <circle cx="17.6" cy="6.4" r="1.15" class="instagram-dot"/>
-                    </svg>
-
-                    <span>Bilder og videoer på Instagram</span>
-
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="section section-light" id="om-oss">
-
-        <div class="content-width">
-
-            <div class="split-layout">
-
-                <div class="split-content">
-
-                    <p class="section-label">
-                        Om Skeie Sag
-                    </p>
-
-                    <h2>
-                        Familiebedrift med røtter tilbake til 1981
-                    </h2>
-
-                    <p class="lead-text">
-                        Skeie Sag bygger videre på familiebedriften som ble etablert i 1981 med samme navn.
-                    </p>
-
-                    <p>
-                        Vi tilbyr spesialsaging, lokalt trevirke,
-                        eik og leieskjæring av kundens eget tømmer.
-                    </p>
-
-                    <p>
-                        Målet er å ta vare på lokale ressurser og gjøre
-                        trær med historie om til materialer som kan leve videre
-                        i nye prosjekter.
-                    </p>
-
-                </div>
-
-                <div class="split-image">
-
-                    <img src="images/Dame.jpg"
-                         alt="Treskulptur under arbeid i verkstedet">
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="contact-section" id="kontakt">
-
-        <div class="content-width">
-
-            <div class="contact-layout">
-
-                <div class="contact-introduction">
-
-                    <p class="section-label">
-                        Kontakt
-                    </p>
-
-                    <h2>
-                        Har du et prosjekt du vil diskutere?
-                    </h2>
-
-                    <p>
-                        Ta gjerne kontakt for en uforpliktende prat.
-                        Send gjerne med et bilde av tømmeret, så er
-                        det lettere å si noe om hva som lar seg gjøre.
-                    </p>
-
-                </div>
-
-                <div class="contact-card">
-
-                    <div class="contact-detail">
-
-                        <span class="contact-label">Telefon</span>
-
-                        <a href="tel:+4740009098">
-                            40 00 90 98
-                        </a>
-
-                    </div>
-
-                    <div class="contact-detail">
-
-                        <span class="contact-label">E-post</span>
-
-                        <a href="mailto:post@skeiesag.no">
-                            post@skeiesag.no
-                        </a>
-
-                    </div>
-
-                    <div class="contact-detail">
-
-                        <span class="contact-label">Instagram</span>
-
-                        <a href="https://www.instagram.com/skeie_sag/"
-                           target="_blank"
-                           rel="noopener">
-                            @skeie_sag
-                        </a>
-
-                    </div>
-
-                    <div class="contact-detail">
-
-                        <span class="contact-label">Område</span>
-
-                        <span>
-                            Lindesnes, Mandal, Marnardal, Søgne og Kristiansand
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="contact-map">
-
-                <iframe
-                    class="map-frame"
-                    title="Kart som viser hvor Skeie Sag ligger"
-                    src="https://maps.google.com/maps?q=58.048164,7.585391&amp;z=14&amp;hl=no&amp;output=embed"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    allowfullscreen></iframe>
-
-                <a class="map-link"
-                   href="https://www.google.com/maps/dir/?api=1&amp;destination=58.048164,7.585391"
-                   target="_blank"
-                   rel="noopener">
-                    Åpne veibeskrivelse i Google Maps
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-</main>
-
-<footer class="site-footer">
-
-    <div class="content-width footer-content">
-
-        <div>
-            <strong>Skeie Sag</strong>
-            <p>Lokalt sagbruk på Skeie i Lindesnes</p>
-        </div>
-
-        <a class="footer-social"
-           href="https://www.instagram.com/skeie_sag/"
-           target="_blank"
-           rel="noopener">
-
-            <svg class="instagram-icon"
-                 viewBox="0 0 24 24"
-                 aria-hidden="true"
-                 focusable="false">
-                <rect x="2.6" y="2.6" width="18.8" height="18.8" rx="5.4"/>
-                <circle cx="12" cy="12" r="4.4"/>
-                <circle cx="17.6" cy="6.4" r="1.15" class="instagram-dot"/>
-            </svg>
-
-            <span>@skeie_sag</span>
-
-        </a>
-
-        <p>
-            © 2026 Skeie Sag
+        <p class="message">
+            <strong>Informasjon kommer</strong>
+            Vi holder på med nettsiden. Ta gjerne kontakt
+            i mellomtiden.
         </p>
 
-    </div>
+        <div class="contact">
 
-</footer>
+            <a href="tel:+4740009098">40 00 90 98</a>
+
+            <a href="mailto:post@skeiesag.no">post@skeiesag.no</a>
+
+            <a href="https://www.instagram.com/skeie_sag/"
+               target="_blank"
+               rel="noopener">@skeie_sag</a>
+
+        </div>
+
+    </div>
 
 </body>
 </html>
